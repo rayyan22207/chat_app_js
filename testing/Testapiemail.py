@@ -2,12 +2,9 @@
 import requests
 
 def test_register_user():
-    url = "http://localhost:8000/api/register"
+    url = "http://localhost:8000/api/email"
     payload = {
-        "name": "testuser",
         "email": "test@example.com",
-        "password": "testpassword",
-        "profile_pic" : ""
     }
     
     response = requests.post(url, json=payload)
