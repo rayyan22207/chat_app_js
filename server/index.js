@@ -10,6 +10,8 @@ app.use(cors({
     credentials : true
 }))
 
+app.use(express.json())
+
 const PORT = process.env.PORT || 8000
 
 app.get('/', (request, response)=>{
