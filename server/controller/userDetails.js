@@ -1,6 +1,7 @@
 const getUserDetailsFromToken = require("../helpers/getUserDetailsFromToken")
 
 async function userDetails(request,response){
+    // console.log(request);
     try {
         const token = request.cookies.token || ""
 
